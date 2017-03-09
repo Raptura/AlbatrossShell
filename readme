@@ -1,0 +1,36 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~ Albatross Shell ~~~~~~~~~~~~
+~~~~~~~~~~~~Armond Smith~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#############   Commands   ################
+
+quit: quits the shell
+
+pause: pauses the shell. To unpause click the 'enter' key
+
+dir <directory>: prints the contents of the directory to the console
+
+environ: prints all the environment variables to the console
+
+cd: shows the current active directory
+cd <PATH>: change current active directory to path
+
+echo <comment>: prints the comment to the panel
+
+################   Modifiers   ###############
+
+Output "> (File)":
+  Changes STDOUT for the command to the file specified
+  This will allow any output the command will give to go into the file specified instead of the console.
+
+Input "< (File)":
+  Changes STDIN for the command to the file specified.
+  This will allow any input the command will receive to come from the file specified instead of the console.
+
+Pipe "(Command 1) | (Command 2)":
+  Allows for two way communication with the parent and the child process that executes a program.
+  The parent process will all input after the pipe symbol to the child executing the command before the pipe symbol.
+
+Background "&":
+  Allows for the command to be performed in the background.
